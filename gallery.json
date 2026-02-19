@@ -1,1 +1,24 @@
-
+{
+    "pieces": [
+      {
+        "id": "killua-2024",
+        "category": "clothing",
+        "title": "godspeed killua",
+        "year": "2024",
+        "medium": "fabric paint on cotton",
+        "size": "youth x-large",
+        "tags": ["anime", "hoodie", "paint"],
+        "thumbnail": "images/killua/thumb.png",
+        "primary": [
+          { "src": "images/killua/front.png", "label": "front" },
+          { "src": "images/killua/back.png", "label": "back" }
+        ],
+        "references": [
+          { "src": "images/killua/ref-eyes.png", "label": "reference (eyes)" },
+          { "src": "images/killua/ref-godspeed.png", "label": "reference (pose)" }
+        ],
+        "description": "Add any extra notes here. Credits, process notes, etc."
+      }
+    ]
+  }
+  

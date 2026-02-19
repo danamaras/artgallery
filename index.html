@@ -1,1 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Art Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <h1 class="title">Elisa's Art Portfolio ^-^</h1>
+        <p class="subtitle">Clothing • Tote Bags • Non-Glass • Glass</p>
+      </div>
+      
+
+      <nav class="tabs" aria-label="Categories">
+        <button class="tab is-active" data-category="all">All</button>
+        <button class="tab" data-category="clothing">Clothing</button>
+        <button class="tab" data-category="tote-bags">Tote Bags</button>
+        <button class="tab" data-category="non-glass">Non-Glass</button>
+        <button class="tab" data-category="glass">Glass</button>
+      </nav>
+    </header>
+        <!-- Background Music -->
+    <audio id="bgm" loop preload="auto">
+        <source src="audio/bgm.mp3" type="audio/mpeg" />
+    </audio>
+    
+    <div class="music-ui">
+        <audio id="bgm" loop preload="auto">
+          <source src="audio/bgm.mp3" type="audio/mpeg" />
+        </audio>
+      
+        <button id="musicBtn" class="music-btn" aria-pressed="false">
+          ▶ Play
+        </button>
+      
+        <img id="teemo" class="teemo" src="images/ui/teemo.gif" alt="" />
+      </div>
+      
+  
+    <main class="wrap">
+      <section class="toolbar">
+        <input
+          id="search"
+          class="search"
+          type="search"
+          placeholder="Search title, tags…"
+          autocomplete="off"
+        />
+        <div class="hint">Hover to zoom. Click to view full piece + references.</div>
+      </section>
+
+      <section id="grid" class="grid" aria-live="polite"></section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal__backdrop" data-close="true"></div>
+
+      <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Artwork details">
+        <button class="modal__close" aria-label="Close" data-close="true">✕</button>
+
+        <div class="modal__content">
+          <header class="modal__header">
+            <h2 id="modalTitle" class="modal__title"></h2>
+          </header>
+
+          <section class="piece-block">
+            <div id="modalPrimary" class="piece-pair"></div>
+
+            <div class="piece-details">
+              <div id="modalMeta" class="piece-meta"></div>
+              <div id="modalDesc" class="piece-desc"></div>
+            </div>
+          </section>
+
+          <section class="refs-block">
+            <h3 class="refs-title">REFERENCES</h3>
+            <div id="modalRefs" class="refs-grid"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
